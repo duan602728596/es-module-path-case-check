@@ -1,0 +1,4 @@
+linters:
+  '*.{js,jsx,ts,tsx}': eslint
+ignore:
+  - node_modules
