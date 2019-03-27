@@ -1,1 +1,3 @@
-describe('js', require('./js/test'));
+describe('javascript', require('./js/describe'));
+
+describe('typescript', require('./ts/describe'));
