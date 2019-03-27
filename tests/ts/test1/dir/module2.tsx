@@ -7,7 +7,7 @@ function f(a: string, b: number): string {
   return `${ a }${ b }`;
 }
 
-class Domo extends React.Component {
+class Demo extends React.Component<{}, {}> {
   render() {
     return (
       <div>Hello, world.</div>
