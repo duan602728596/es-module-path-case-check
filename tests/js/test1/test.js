@@ -1,6 +1,6 @@
 const path = require('path');
 const { expect } = require('chai');
-const js = require('../../lib/js/js');
+const js = require('../../../lib/js/js');
 
 module.exports = async function() {
   const map = await js({
