@@ -1,10 +1,10 @@
 const path = require('path');
 const { expect } = require('chai');
-const js = require('../lib/js/js');
+const js = require('../../lib/js/js');
 
 module.exports = async function() {
   const map = await js({
-    cwd: path.join(__dirname, 'test1'),
+    cwd: path.join(__dirname, 'dir'),
     test: true
   });
   let errLen = 0;
@@ -14,11 +14,10 @@ module.exports = async function() {
       const { err } = item;
 
       if (err) {
-        expect(item.value).to.be.eql('./MODULE2');
         errLen += 1;
       }
     }
   });
 
-  expect(errLen).to.be.eql(1);
+  expect(errLen).to.be.eql(0);
 };

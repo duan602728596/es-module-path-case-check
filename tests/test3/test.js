@@ -1,15 +1,15 @@
 const path = require('path');
 const childProcess = require('child_process');
 const { expect } = require('chai');
-const js = require('../lib/js/js');
+const js = require('../../lib/js/js');
 
 function run() {
-  const cli = path.join(__dirname, '../lib/cli');
+  const cli = path.join(__dirname, '../../lib/cli');
 
   return new Promise((resolve, reject) => {
     const child = childProcess.spawn('node', [
       cli,
-      '--dir="./test3"',
+      '--dir="./dir"',
       '--ext="css"',
       '--test=true'
     ], {
