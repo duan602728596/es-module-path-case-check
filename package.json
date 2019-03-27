@@ -1,6 +1,6 @@
 {
   "name": "es-module-path-case-check",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Es module path case check tool.",
   "bin": {
     "case-check": "lib/cli.js"
