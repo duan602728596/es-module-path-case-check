@@ -2,4 +2,4 @@ function module1() {
   // func1
 }
 
-module.exports = module1;
+export default module1;
