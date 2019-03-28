@@ -1,33 +1,24 @@
 const path = require('path');
-const childProcess = require('child_process');
 const { expect } = require('chai');
 const js = require('../../../lib/js/js');
 
-function run() {
-  const cli = path.join(__dirname, '../../../lib/cli');
-
-  return new Promise((resolve, reject) => {
-    const child = childProcess.spawn('node', [
-      cli,
-      '--dir="./dir"',
-      '--ext="css"',
-      '--test=true'
-    ], {
-      cwd: __dirname
-    });
-
-    child.on('close', (code) => {
-      resolve(child);
-    });
-
-    child.stdout.on('data', (data) => undefined);
-    child.stderr.on('data', (data) => undefined);
-  });
-}
-
 module.exports = async function() {
-  const child = await run();
+  const map = await js({
+    cwd: path.join(__dirname, 'dir'),
+    test: true
+  });
+  let errLen = 0;
 
-  expect(!!child).to.be.true;
-  child.kill(); // 结束进程
+  map.forEach((value, key) => {
+    for (const item of value.tree) {
+      const { err } = item;
+
+      if (err) {
+        expect(item.value).to.be.eql('./Module2');
+        errLen += 1;
+      }
+    }
+  });
+
+  expect(errLen).to.be.eql(1);
 };
