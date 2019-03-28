@@ -2,7 +2,9 @@
 
 Under the window, the path of the file will be case-insensitive, *es-module-path-case-check* is a detection tool that checks if the case of js does not match when the module is imported.   
 
-Can check es6 modules like `import fn from './modules';`, `import('./modules')`.
+Can check es6 modules like `import fn from './modules';`, `import('./modules');`.   
+
+The file type that supports checking is `.js`, `.jsx`, `.json`, '.ts', '.tsx', '.vue', '.mjs', '.wasm', '.node'.
 
 ## How to use
 
