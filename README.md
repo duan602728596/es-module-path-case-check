@@ -4,7 +4,7 @@ Under the window, the path of the file will be case-insensitive, *es-module-path
 
 Can check es6 modules like `import fn from './modules';`, `import('./modules');`.   
 
-The file type that supports checking is `.js`, `.jsx`, `.json`, '.ts', '.tsx', '.vue', '.mjs', '.wasm', '.node'.
+The file type that supports checking is `.js`, `.jsx`, `.json`, `.ts`, `.tsx`, `.vue`, `.mjs`, `.wasm`, `.node`.
 
 ## How to use
 
