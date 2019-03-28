@@ -7,4 +7,7 @@ module.exports = function() {
 
   // test3
   it('should cli will execute correctly', require('./test3/it'));
+
+  // test4
+  it('should module imported by import() will have an error', require('./test4/it'));
 };
