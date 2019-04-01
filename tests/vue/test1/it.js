@@ -1,9 +1,9 @@
 const path = require('path');
 const { expect } = require('chai');
-const js = require('../../../lib/parseFiles');
+const parseFiles = require('../../../lib/parseFiles');
 
 module.exports = async function() {
-  const map = await js({
+  const map = await parseFiles({
     cwd: path.join(__dirname, 'dir'),
     test: true
   });
