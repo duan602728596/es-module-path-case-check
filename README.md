@@ -12,6 +12,8 @@ The file type that supports checking is `.js`, `.jsx`, `.json`, `.ts`, `.tsx`, `
 
 ## Parsing css
 
+> This feature will cause analysis failure due to grammar problems.
+
 If you want to parse the url field of a css file, you can run the command like this: `case-check --dir="./path/to/dir" --css`.   
 
 The file type that supports checking is `.css`, `.sass`, `.scss`, `.less`, `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.svg`, `.ttf`, `.woff`, `.woff2`, `.eot`.   
