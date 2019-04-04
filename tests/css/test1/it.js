@@ -20,5 +20,5 @@ module.exports = async function() {
     }
   });
 
-  expect(errLen).to.be.eql(4);
+  expect(errLen).to.be.eql(5);
 };
