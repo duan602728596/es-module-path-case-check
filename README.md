@@ -14,9 +14,7 @@ The file type that supports checking is `.js`, `.jsx`, `.json`, `.ts`, `.tsx`, `
 
 If you want to parse the url field of a css file, you can run the command like this: `case-check --dir="./path/to/dir" --css`.   
 
-The file type that supports checking is `.css`, `.sass`, `.scss`, `.less`, `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.svg`, `.ttf`, `.woff`, `.woff2`, `.eot`.   
-
-*The stylus parser is temporarily not supported due to syntax issues.*
+The file type that supports checking is `.vue`, `.css`, `.sass`, `.scss`, `.less`, `styl`, `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.svg`, `.ttf`, `.woff`, `.woff2`, `.eot`.   
 
 ## Cli command
 
