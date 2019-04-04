@@ -1,4 +1,4 @@
 body {
   /* err */
-  background-image: url('../../IMAGE.jpg');
+  background-image: url('../IMAGE.jpg');
 }
