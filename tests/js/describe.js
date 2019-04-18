@@ -7,4 +7,7 @@ module.exports = function() {
 
   // test3
   it('should module imported by import() will have an error', require('./test3/it'));
+
+  // test4
+  it('should an error when the file import path is a folder', require('./test4/it'));
 };

@@ -1,0 +1,1 @@
+import str from './MODULE2'; // err
