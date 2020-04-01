@@ -9,18 +9,3 @@ yarn-error.log
 
 # webstorm
 .idea
-
-# packages
-packages/**/lib
-packages/**/node_modules
-packages/**/npm-debug.log
-packages/**/package-lock.json
-packages/**/yarn.lock
-packages/**/yarn-error.log
-packages/**/build
-packages/**/.dll
-packages/**/.babelCache
-packages/**/.terserCache
-
-# util-tools
-packages/util-tools/tests/image2webp/*.webp
