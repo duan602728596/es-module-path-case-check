@@ -23,7 +23,7 @@
     "@babel/parser": "^7.9.4",
     "@babel/traverse": "^7.9.0",
     "@vue/component-compiler-utils": "^2.6.0",
-    "colors": "^1.4.0",
+    "chalk": "^3.0.0",
     "glob": "^7.1.6",
     "lodash": "^4.17.15",
     "postcss": "^7.0.27",
